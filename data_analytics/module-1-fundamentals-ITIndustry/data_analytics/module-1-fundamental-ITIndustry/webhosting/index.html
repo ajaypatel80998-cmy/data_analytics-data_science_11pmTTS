@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ajay Patel | Data Analytics</title>
+
+    <!-- Tailwind CSS 4 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+
+        @theme {
+            --font-display: "Trebuchet MS", sans-serif;
+            --font-body: "Segoe UI", sans-serif;
+
+            --color-ink: #172b4d;
+            --color-mint: #b9f5df;
+            --color-coral: #ff715b;
+            --color-paper: #f7f8f4;
+        }
+
+        @keyframes rise {
+            from {
+                opacity: 0;
+                transform: translateY(14px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-rise {
+            animation: rise 700ms ease-out both;
+        }
+
+        .delay-1 {
+            animation-delay: 100ms;
+        }
+
+        .delay-2 {
+            animation-delay: 200ms;
+        }
+
+        .delay-3 {
+            animation-delay: 300ms;
+        }
+
+    </style>
+</head>
+
+
+<body class="overflow-x-hidden bg-paper font-body text-ink antialiased">
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="border-b border-ink/10 bg-paper/95">
+
+        <nav
+            class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 lg:px-8"
+            aria-label="Main navigation">
+
+            <!-- Logo -->
+
+            <a
+                href="#home"
+                class="font-display text-xl font-bold tracking-tight">
+
+                Ajay Patel<span class="text-coral">.</span>
+
+            </a>
+
+
+            <!-- Navigation -->
+
+            <div class="hidden items-center gap-8 text-sm font-medium md:flex">
+
+                <a
+                    href="#home"
+                    class="transition-colors hover:text-coral">
+
+                    Home
+
+                </a>
+
+                <a
+                    href="#services"
+                    class="transition-colors hover:text-coral">
+
+                    Services
+
+                </a>
+
+                <a
+                    href="#insights"
+                    class="transition-colors hover:text-coral">
+
+                    Insights
+
+                </a>
+
+                <a
+                    href="#about"
+                    class="transition-colors hover:text-coral">
+
+                    About
+
+                </a>
+
+            </div>
+
+
+            <!-- Get Started Button -->
+
+            <a
+                href="#contact"
+                class="rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5">
+
+                Get Started
+                <span aria-hidden="true">→</span>
+
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main id="home">
+
+
+        <!-- ================= HERO SECTION ================= -->
+
+        <section
+            class="mx-auto grid max-w-6xl items-center gap-14 px-6 pb-20 pt-16 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:pb-28 lg:pt-24">
+
+
+            <!-- Hero Content -->
+
+            <div class="animate-rise">
+
+                <p
+                    class="mb-6 inline-flex items-center gap-2 rounded-full border border-ink/10 bg-white px-3 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-coral">
+
+                    <span class="h-2 w-2 rounded-full bg-coral"></span>
+
+                    Data Analytics
+
+                </p>
+
+
+                <h1
+                    class="max-w-xl font-display text-5xl font-bold leading-[0.98] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
+
+                    Turn Your Data Into Your Next
+
+                    <span class="text-coral">
+                        Smart Decision.
+                    </span>
+
+                </h1>
+
+
+                <p
+                    class="mt-7 max-w-lg text-lg leading-8 text-ink/65">
+
+                    Analyze your business data, discover important
+                    insights, and make better decisions with
+                    data-driven solutions.
+
+                </p>
+
+
+                <!-- Buttons -->
+
+                <div class="mt-9 flex flex-wrap items-center gap-4">
+
+                    <a
+                        href="#services"
+                        class="rounded-full bg-coral px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-coral/20 transition-transform hover:-translate-y-1">
+
+                        Explore Analytics
+                        <span aria-hidden="true">→</span>
+
+                    </a>
+
+
+                    <a
+                        href="#insights"
+                        class="px-3 py-3.5 text-sm font-bold underline decoration-ink/25 underline-offset-4 hover:decoration-coral">
+
+                        Learn More
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= DASHBOARD ================= -->
+
+            <div
+                class="animate-rise delay-1 relative">
+
+
+                <!-- Growth Badge -->
+
+                <div
+                    class="absolute -right-3 -top-6 z-10 rounded-2xl bg-mint px-4 py-3 shadow-xl shadow-ink/10 sm:-right-8">
+
+                    <p class="text-xs font-semibold text-ink/60">
+                        Growth
+                    </p>
+
+                    <p class="font-display text-2xl font-bold">
+                        +24.8%
+                    </p>
+
+                </div>
+
+
+                <!-- Dashboard -->
+
+                <div
+                    class="overflow-hidden rounded-[2rem] border border-ink/10 bg-white p-4 shadow-2xl shadow-ink/10 sm:p-6">
+
+
+                    <!-- Dashboard Header -->
+
+                    <div
+                        class="mb-7 flex items-center justify-between">
+
+                        <div>
+
+                            <p
+                                class="text-xs font-semibold uppercase tracking-widest text-ink/45">
+
+                                Analytics Overview
+
+                            </p>
+
+                            <h2
+                                class="mt-1 font-display text-xl font-bold">
+
+                                Growth Dashboard
+
+                            </h2>
+
+                        </div>
+
+
+                        <span
+                            class="rounded-lg bg-paper px-3 py-2 text-xs font-semibold text-ink/60">
+
+                            This Month
+
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- Statistics -->
+
+                    <div class="grid grid-cols-2 gap-3">
+
+
+                        <!-- Revenue -->
+
+                        <div
+                            class="rounded-2xl bg-paper p-4">
+
+                            <p class="text-xs text-ink/50">
+                                Revenue
+                            </p>
+
+                            <p
+                                class="mt-2 text-2xl font-bold">
+
+                                $45,280
+
+                            </p>
+
+                            <p
+                                class="mt-1 text-xs font-bold text-emerald-600">
+
+                                ↑ 12.5%
+
+                            </p>
+
+                        </div>
+
+
+
+                        <!-- Customers -->
+
+                        <div
+                            class="rounded-2xl bg-ink p-4 text-white">
+
+                            <p class="text-xs text-white/55">
+                                Customers
+                            </p>
+
+                            <p
+                                class="mt-2 text-2xl font-bold">
+
+                                2,450
+
+                            </p>
+
+                            <p
+                                class="mt-1 text-xs font-bold text-mint">
+
+                                ↑ 8.2%
+
+                            </p>
+
+                        </div>
+
+
+
+                        <!-- Orders -->
+
+                        <div
+                            class="rounded-2xl bg-paper p-4">
+
+                            <p class="text-xs text-ink/50">
+                                Orders
+                            </p>
+
+                            <p
+                                class="mt-2 text-2xl font-bold">
+
+                                1,280
+
+                            </p>
+
+                            <p
+                                class="mt-1 text-xs font-bold text-emerald-600">
+
+                                ↑ 15.4%
+
+                            </p>
+
+                        </div>
+
+
+
+                        <!-- Conversion -->
+
+                        <div
+                            class="rounded-2xl bg-mint p-4">
+
+                            <p class="text-xs text-ink/50">
+                                Conversion
+                            </p>
+
+                            <p
+                                class="mt-2 text-2xl font-bold">
+
+                                24.8%
+
+                            </p>
+
+                            <p
+                                class="mt-1 text-xs font-bold text-emerald-600">
+
+                                ↑ 5.6%
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Chart -->
+
+                    <div
+                        class="mt-5 rounded-2xl border border-ink/10 p-4">
+
+                        <div
+                            class="flex items-center justify-between">
+
+                            <p class="text-sm font-semibold">
+
+                                Weekly Performance
+
+                            </p>
+
+                            <span
+                                class="text-xs text-ink/45">
+
+                                Last 7 Days
+
+                            </span>
+
+                        </div>
+
+
+                        <!-- Chart Bars -->
+
+                        <div
+                            class="mt-5 flex h-32 items-end gap-2 sm:gap-3">
+
+                            <div
+                                class="h-[38%] flex-1 rounded-t-md bg-mint">
+                            </div>
+
+                            <div
+                                class="h-[56%] flex-1 rounded-t-md bg-mint">
+                            </div>
+
+                            <div
+                                class="h-[48%] flex-1 rounded-t-md bg-coral/70">
+                            </div>
+
+                            <div
+                                class="h-[72%] flex-1 rounded-t-md bg-coral">
+                            </div>
+
+                            <div
+                                class="h-[63%] flex-1 rounded-t-md bg-coral/80">
+                            </div>
+
+                            <div
+                                class="h-[86%] flex-1 rounded-t-md bg-ink">
+                            </div>
+
+                            <div
+                                class="h-[76%] flex-1 rounded-t-md bg-ink/70">
+                            </div>
+
+                        </div>
+
+
+                        <!-- Chart Days -->
+
+                        <div
+                            class="mt-3 flex justify-between text-[10px] font-medium text-ink/40">
+
+                            <span>MON</span>
+                            <span>TUE</span>
+                            <span>WED</span>
+                            <span>THU</span>
+                            <span>FRI</span>
+                            <span>SAT</span>
+                            <span>SUN</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= SERVICES ================= -->
+
+        <section
+            id="services"
+            class="border-y border-ink/10 bg-white">
+
+            <div
+                class="mx-auto max-w-6xl px-6 py-16 lg:px-8 lg:py-20">
+
+
+                <!-- Services Heading -->
+
+                <div class="mb-12 text-center">
+
+                    <p
+                        class="text-sm font-bold uppercase tracking-[0.18em] text-coral">
+
+                        Our Services
+
+                    </p>
+
+                    <h2
+                        class="mt-4 font-display text-3xl font-bold sm:text-4xl">
+
+                        Data Analytics Solutions
+
+                    </h2>
+
+                    <p
+                        class="mx-auto mt-4 max-w-2xl text-ink/60">
+
+                        Convert your business data into useful
+                        information and actionable insights.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Service Cards -->
+
+                <div
+                    class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+
+                    <!-- Service 1 -->
+
+                    <div
+                        class="rounded-2xl border border-ink/10 p-6 transition hover:-translate-y-1 hover:shadow-xl">
+
+                        <div class="mb-5 text-4xl">
+                            📊
+                        </div>
+
+                        <h3
+                            class="text-xl font-bold">
+
+                            Data Visualization
+
+                        </h3>
+
+                        <p
+                            class="mt-3 text-sm leading-6 text-ink/60">
+
+                            Convert complex data into simple and
+                            meaningful charts, graphs, and dashboards.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Service 2 -->
+
+                    <div
+                        class="rounded-2xl border border-ink/10 p-6 transition hover:-translate-y-1 hover:shadow-xl">
+
+                        <div class="mb-5 text-4xl">
+                            📈
+                        </div>
+
+                        <h3
+                            class="text-xl font-bold">
+
+                            Business Analytics
+
+                        </h3>
+
+                        <p
+                            class="mt-3 text-sm leading-6 text-ink/60">
+
+                            Understand business performance and
+                            identify opportunities using data.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Service 3 -->
+
+                    <div
+                        class="rounded-2xl border border-ink/10 p-6 transition hover:-translate-y-1 hover:shadow-xl">
+
+                        <div class="mb-5 text-4xl">
+                            💡
+                        </div>
+
+                        <h3
+                            class="text-xl font-bold">
+
+                            Data Insights
+
+                        </h3>
+
+                        <p
+                            class="mt-3 text-sm leading-6 text-ink/60">
+
+                            Discover useful patterns and insights
+                            from your business data.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= INSIGHTS ================= -->
+
+        <section
+            id="insights"
+            class="border-b border-ink/10 bg-white">
+
+            <div
+                class="mx-auto grid max-w-6xl gap-10 px-6 py-16 lg:grid-cols-[0.8fr_1.2fr] lg:px-8 lg:py-20">
+
+
+                <!-- Left Content -->
+
+                <div class="animate-rise delay-2">
+
+                    <p
+                        class="text-sm font-bold uppercase tracking-[0.18em] text-coral">
+
+                        How It Works
+
+                    </p>
+
+                    <h2
+                        class="mt-4 max-w-sm font-display text-3xl font-bold leading-tight sm:text-4xl">
+
+                        The numbers tell a story.
+                        We help you read it.
+
+                    </h2>
+
+                </div>
+
+
+
+                <!-- Steps -->
+
+                <div class="grid gap-8 sm:grid-cols-3">
+
+
+                    <!-- Step 1 -->
+
+                    <div>
+
+                        <span
+                            class="font-display text-4xl font-bold">
+
+                            01
+
+                        </span>
+
+                        <h3 class="mt-4 font-bold">
+                            Collect
+                        </h3>
+
+                        <p
+                            class="mt-2 text-sm leading-6 text-ink/60">
+
+                            Bring your business data together
+                            from different sources.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Step 2 -->
+
+                    <div>
+
+                        <span
+                            class="font-display text-4xl font-bold">
+
+                            02
+
+                        </span>
+
+                        <h3 class="mt-4 font-bold">
+                            Understand
+                        </h3>
+
+                        <p
+                            class="mt-2 text-sm leading-6 text-ink/60">
+
+                            Analyze the data and identify
+                            important patterns.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Step 3 -->
+
+                    <div>
+
+                        <span
+                            class="font-display text-4xl font-bold">
+
+                            03
+
+                        </span>
+
+                        <h3 class="mt-4 font-bold">
+                            Act
+                        </h3>
+
+                        <p
+                            class="mt-2 text-sm leading-6 text-ink/60">
+
+                            Use insights to make smarter
+                            business decisions.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section
+            id="about"
+            class="mx-auto max-w-6xl px-6 py-16 lg:px-8 lg:py-20">
+
+            <div
+                class="rounded-[2rem] bg-mint p-8 sm:p-12">
+
+
+                <p
+                    class="text-sm font-bold uppercase tracking-[0.18em] text-ink/55">
+
+                    About Me
+
+                </p>
+
+
+                <h2
+                    class="mt-4 max-w-xl font-display text-4xl font-bold leading-tight">
+
+                    Hello, I'm Ajay Patel
+
+                </h2>
+
+
+                <p
+                    class="mt-5 max-w-2xl leading-7 text-ink/65">
+
+                    I am interested in data analytics and
+                    software development. I enjoy working with
+                    data, finding useful insights, and building
+                    practical solutions.
+
+                </p>
+
+
+                <p
+                    class="mt-3 max-w-2xl leading-7 text-ink/65">
+
+                    My goal is to transform raw data into
+                    meaningful information that can help
+                    businesses make better decisions.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section
+            id="contact"
+            class="bg-ink py-16 text-white">
+
+            <div
+                class="mx-auto max-w-4xl px-6 text-center">
+
+
+                <p
+                    class="text-sm font-bold uppercase tracking-[0.18em] text-mint">
+
+                    Get Started
+
+                </p>
+
+
+                <h2
+                    class="mt-4 text-3xl font-bold sm:text-4xl">
+
+                    Ready to Understand Your Data?
+
+                </h2>
+
+
+                <p
+                    class="mx-auto mt-4 max-w-xl text-white/60">
+
+                    Let's use data to make smarter
+                    business decisions.
+
+                </p>
+
+
+                <a
+                    href="mailto:your-email@example.com"
+                    class="mt-8 inline-block rounded-full bg-coral px-6 py-3.5 text-sm font-bold text-white transition-transform hover:-translate-y-1">
+
+                    Contact Me
+                    <span aria-hidden="true">→</span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer
+        class="border-t border-ink/10">
+
+        <div
+            class="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-6 text-sm text-ink/55 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+
+
+            <p
+                class="font-display font-bold text-ink">
+
+                Ajay Patel<span class="text-coral">.</span>
+
+            </p>
+
+
+            <p>
+                Data Analytics Portfolio
+            </p>
+
+
+            <p>
+                © 2026 Ajay Patel
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
