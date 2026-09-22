@@ -16,6 +16,7 @@ In simple terms, an API acts as a **bridge** or **messenger** between two applic
 
 ---
 
+
 # Examples of APIs in Everyday Life
 
 * **Weather Apps** – Pull live weather data from a weather service API

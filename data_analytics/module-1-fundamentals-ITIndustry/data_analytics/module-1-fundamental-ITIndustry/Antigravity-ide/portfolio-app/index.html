@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajay Bhesdadiya | Data Analyst & BI Specialist Portfolio</title>
+  <meta name="description" content="Portfolio of Ajay Bhesdadiya - Fresher Data Analyst skilled in Python, SQL, Power BI, Tableau, Advanced Excel, and Business Intelligence.">
+  <meta name="keywords" content="Ajay Bhesdadiya, Data Analyst, Portfolio, Power BI, SQL, Python, Tableau, Excel, Fresher Data Analyst">
+  <meta name="author" content="Ajay Bhesdadiya">
+
+  <!-- Tailwind CSS v4 Browser Runtime -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950 relative overflow-x-hidden min-h-screen">
+
+  <!-- Ambient Glow Effects -->
+  <div class="fixed top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10 animate-glow"></div>
+  <div class="fixed top-1/3 right-10 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+  <div class="fixed bottom-10 left-1/3 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl pointer-events-none -z-10 animate-glow"></div>
+
+  <!-- Background Grid Pattern -->
+  <div class="fixed inset-0 bg-grid-pattern pointer-events-none opacity-40 -z-10"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="sticky top-0 z-40 w-full border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-md transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center font-bold text-slate-950 shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-200">
+          <i data-lucide="bar-chart-2" class="w-5 h-5 text-slate-950"></i>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-lg font-extrabold tracking-tight text-white group-hover:text-cyan-400 transition-colors">
+            Ajay <span class="text-cyan-400">Bhesdadiya</span>
+          </span>
+          <span class="text-xs text-slate-400 font-medium tracking-wide flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Data Analyst (Fresher)
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-1 xl:gap-2 text-sm font-medium text-slate-300">
+        <a href="#about" class="px-3 py-2 rounded-lg hover:text-cyan-400 hover:bg-slate-900/60 transition-colors">About</a>
+        <a href="#skills" class="px-3 py-2 rounded-lg hover:text-cyan-400 hover:bg-slate-900/60 transition-colors">Skills & Tools</a>
+        <a href="#experience" class="px-3 py-2 rounded-lg hover:text-cyan-400 hover:bg-slate-900/60 transition-colors">Experience</a>
+        <a href="#projects" class="px-3 py-2 rounded-lg hover:text-cyan-400 hover:bg-slate-900/60 transition-colors">Projects</a>
+        <a href="#process" class="px-3 py-2 rounded-lg hover:text-cyan-400 hover:bg-slate-900/60 transition-colors">Analytics Process</a>
+        <a href="#certifications" class="px-3 py-2 rounded-lg hover:text-cyan-400 hover:bg-slate-900/60 transition-colors">Certifications</a>
+        <a href="#contact" class="px-3 py-2 rounded-lg hover:text-cyan-400 hover:bg-slate-900/60 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Desktop Action Buttons -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold bg-cyan-500 hover:bg-cyan-400 text-slate-950 shadow-md shadow-cyan-500/20 transition-all hover:scale-102">
+          <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+          Hire Me
+        </a>
+        <a href="#resume-modal-trigger" id="quick-resume-btn" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-semibold border border-slate-700 bg-slate-900/80 hover:bg-slate-800 text-slate-200 transition-colors">
+          <i data-lucide="file-text" class="w-3.5 h-3.5 text-cyan-400"></i>
+          Resume
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-open-btn" aria-label="Open Mobile Menu" class="lg:hidden p-2.5 rounded-xl border border-slate-800 bg-slate-900/90 text-slate-300 hover:text-cyan-400 hover:border-cyan-500/50 transition-all">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Off-Canvas Drawer (Slides in from Right) -->
+  <div id="mobile-backdrop" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 transition-opacity duration-300 opacity-0 pointer-events-none"></div>
+
+  <aside id="mobile-drawer" class="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-slate-900 border-l border-slate-800 shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between overflow-y-auto">
+    <!-- Drawer Header -->
+    <div class="p-6 border-b border-slate-800/80 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-cyan-500 flex items-center justify-center text-slate-950 font-bold">
+          <i data-lucide="database" class="w-4 h-4"></i>
+        </div>
+        <div>
+          <h3 class="font-bold text-white text-sm">Ajay Bhesdadiya</h3>
+          <p class="text-xs text-cyan-400">Data Analytics Portfolio</p>
+        </div>
+      </div>
+      <button id="mobile-menu-close-btn" aria-label="Close Mobile Menu" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <!-- Drawer Navigation Links -->
+    <div class="p-6 space-y-1.5 flex-1">
+      <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider px-3 mb-2">Navigation</p>
+      <a href="#hero" class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-slate-300 hover:text-cyan-400 hover:bg-slate-800/80 transition-colors">
+        <i data-lucide="home" class="w-4 h-4 text-cyan-400"></i>
+        <span>Home</span>
+      </a>
+      <a href="#about" class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-slate-300 hover:text-cyan-400 hover:bg-slate-800/80 transition-colors">
+        <i data-lucide="user" class="w-4 h-4 text-cyan-400"></i>
+        <span>About Me</span>
+      </a>
+      <a href="#skills" class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-slate-300 hover:text-cyan-400 hover:bg-slate-800/80 transition-colors">
+        <i data-lucide="cpu" class="w-4 h-4 text-cyan-400"></i>
+        <span>Skills & Analytics Tools</span>
+      </a>
+      <a href="#experience" class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-slate-300 hover:text-cyan-400 hover:bg-slate-800/80 transition-colors">
+        <i data-lucide="briefcase" class="w-4 h-4 text-cyan-400"></i>
+        <span>Experience & Internships</span>
+      </a>
+      <a href="#projects" class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-slate-300 hover:text-cyan-400 hover:bg-slate-800/80 transition-colors">
+        <i data-lucide="folder-kanban" class="w-4 h-4 text-cyan-400"></i>
+        <span>Projects & Dashboards</span>
+      </a>
+      <a href="#process" class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-slate-300 hover:text-cyan-400 hover:bg-slate-800/80 transition-colors">
+        <i data-lucide="workflow" class="w-4 h-4 text-cyan-400"></i>
+        <span>Analytics Workflow</span>
+      </a>
+      <a href="#certifications" class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-slate-300 hover:text-cyan-400 hover:bg-slate-800/80 transition-colors">
+        <i data-lucide="award" class="w-4 h-4 text-cyan-400"></i>
+        <span>Certifications</span>
+      </a>
+      <a href="#contact" class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-slate-300 hover:text-cyan-400 hover:bg-slate-800/80 transition-colors">
+        <i data-lucide="send" class="w-4 h-4 text-cyan-400"></i>
+        <span>Contact Me</span>
+      </a>
+    </div>
+
+    <!-- Drawer Footer Actions -->
+    <div class="p-6 border-t border-slate-800 bg-slate-900/90 space-y-3">
+      <a href="#contact" class="mobile-nav-link w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm shadow-lg shadow-cyan-500/25 transition-all">
+        <i data-lucide="mail" class="w-4 h-4"></i>
+        Get in Touch
+      </a>
+      <button id="mobile-drawer-resume-btn" class="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl border border-slate-700 bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm font-semibold transition-colors">
+        <i data-lucide="download" class="w-4 h-4 text-cyan-400"></i>
+        View / Download CV
+      </button>
+
+      <div class="flex items-center justify-center gap-4 pt-2 text-slate-400">
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition-colors" title="LinkedIn">
+          <i data-lucide="linkedin" class="w-5 h-5"></i>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition-colors" title="GitHub">
+          <i data-lucide="github" class="w-5 h-5"></i>
+        </a>
+        <a href="mailto:ajaybhesdadiya@example.com" class="hover:text-cyan-400 transition-colors" title="Email">
+          <i data-lucide="mail" class="w-5 h-5"></i>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Container -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Hero Text & CTA -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            
+            <!-- Availability Pill -->
+            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-950/40 text-cyan-300 text-xs font-semibold backdrop-blur-md">
+              <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+              <span>Available for Full-time Entry-Level & Internship Roles</span>
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
+              Hi, I'm <span class="text-gradient">Ajay Bhesdadiya</span>
+              <br>
+              <span class="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-300 font-sans mt-2 block">
+                Turning Complex Data Into <span class="text-cyan-400">Actionable Growth</span>
+              </span>
+            </h1>
+
+            <!-- Professional Summary Paragraph -->
+            <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+              Aspiring and results-driven <strong class="text-slate-200">Fresher Data Analyst</strong> specialized in 
+              <span class="text-cyan-400 font-medium">Power BI, SQL, Python, Tableau, and Advanced Excel</span>. 
+              Passionate about discovering hidden patterns, automating analytics workflows, and engineering intuitive visual dashboards that empower stakeholder decision-making.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+              <a href="#projects" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold text-sm shadow-xl shadow-cyan-500/25 transition-all duration-200 hover:-translate-y-0.5">
+                <i data-lucide="layout-grid" class="w-4 h-4"></i>
+                Explore Projects
+              </a>
+              <a href="#contact" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl border border-slate-700 bg-slate-900/80 hover:bg-slate-800 text-white font-semibold text-sm transition-all hover:-translate-y-0.5">
+                <i data-lucide="send" class="w-4 h-4 text-cyan-400"></i>
+                Contact Ajay
+              </a>
+              <button id="hero-resume-btn" class="inline-flex items-center gap-2 px-4 py-3.5 rounded-xl border border-slate-800 hover:border-slate-700 bg-slate-900/50 hover:bg-slate-900 text-slate-300 hover:text-white font-medium text-sm transition-colors">
+                <i data-lucide="file-down" class="w-4 h-4 text-cyan-400"></i>
+                Download CV
+              </button>
+            </div>
+
+            <!-- Key Quick Stats -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-800/80 max-w-xl mx-auto lg:mx-0">
+              <div class="p-3 rounded-xl bg-slate-900/50 border border-slate-800 text-center lg:text-left">
+                <div class="text-2xl font-extrabold text-white">5+</div>
+                <div class="text-xs text-slate-400">End-to-End Projects</div>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900/50 border border-slate-800 text-center lg:text-left">
+                <div class="text-2xl font-extrabold text-cyan-400">15+</div>
+                <div class="text-xs text-slate-400">BI Dashboards</div>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900/50 border border-slate-800 text-center lg:text-left">
+                <div class="text-2xl font-extrabold text-blue-400">100K+</div>
+                <div class="text-xs text-slate-400">Rows Analyzed</div>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900/50 border border-slate-800 text-center lg:text-left">
+                <div class="text-2xl font-extrabold text-emerald-400">100%</div>
+                <div class="text-xs text-slate-400">Job-Ready Fresher</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Right: Ajay Bhesdadiya Photo & Interactive Data Profile -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative w-full max-w-md">
+              
+              <!-- Glow background orb -->
+              <div class="absolute -inset-2 bg-gradient-to-tr from-cyan-500 via-blue-600 to-purple-600 rounded-3xl blur-2xl opacity-40 animate-glow"></div>
+
+              <!-- Main Photo Card Container -->
+              <div class="relative rounded-3xl glass-panel p-3.5 border border-slate-700/80 shadow-2xl overflow-visible group">
+                
+                <!-- Photo Wrapper with Gradient Framing & Hover Zoom -->
+                <div class="relative rounded-2xl overflow-hidden bg-slate-900 aspect-[4/5] sm:aspect-square md:aspect-[4/5] max-h-[440px] border border-cyan-500/30">
+                  <img 
+                    src="assets/ajay-photo.jpg" 
+                    alt="Ajay Bhesdadiya - Data Analyst" 
+                    class="w-full h-full object-cover object-[32%_18%] group-hover:scale-105 transition-transform duration-500 ease-out"
+                  />
+
+                  <!-- Gradient Overlay on Bottom of Image -->
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+
+                  <!-- Floating Top-Right Tool Badge -->
+                  <div class="absolute top-4 right-4 bg-slate-900/90 border border-slate-700/80 backdrop-blur-md px-3 py-1.5 rounded-xl shadow-lg flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span class="text-xs font-bold text-white">Power BI &amp; SQL</span>
+                  </div>
+
+                  <!-- Bottom Info Overlay inside Photo Frame -->
+                  <div class="absolute bottom-4 left-4 right-4 bg-slate-900/90 border border-slate-700/80 backdrop-blur-md p-3.5 rounded-2xl shadow-xl flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                      <div class="w-10 h-10 rounded-xl bg-cyan-500/20 border border-cyan-500/40 text-cyan-400 flex items-center justify-center font-bold">
+                        <i data-lucide="bar-chart-2" class="w-5 h-5"></i>
+                      </div>
+                      <div>
+                        <div class="text-sm font-bold text-white">Ajay Bhesdadiya</div>
+                        <div class="text-xs text-cyan-400 font-medium">Fresher Data Analyst</div>
+                      </div>
+                    </div>
+                    <div class="text-right">
+                      <span class="px-2.5 py-1 rounded-lg text-[10px] font-mono font-bold bg-emerald-950 text-emerald-300 border border-emerald-800">
+                        OPEN TO WORK
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Floating Micro Badge 1 (Top Left) -->
+                <div class="absolute -top-4 -left-4 bg-slate-900/95 border border-cyan-500/50 px-3.5 py-2 rounded-2xl shadow-2xl flex items-center gap-2.5 backdrop-blur-md animate-float z-20">
+                  <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center">
+                    <i data-lucide="database" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <div class="text-[11px] font-bold text-white">100K+ Records</div>
+                    <div class="text-[9px] text-slate-400">SQL &amp; Python ETL</div>
+                  </div>
+                </div>
+
+                <!-- Floating Micro Badge 2 (Bottom Right) -->
+                <div class="absolute -bottom-4 -right-4 bg-slate-900/95 border border-purple-500/50 px-3.5 py-2 rounded-2xl shadow-2xl flex items-center gap-2.5 backdrop-blur-md animate-float z-20" style="animation-delay: 2.5s;">
+                  <div class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center">
+                    <i data-lucide="pie-chart" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <div class="text-[11px] font-bold text-white">15+ Dashboards</div>
+                    <div class="text-[9px] text-slate-400">Power BI &amp; Tableau</div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 border-t border-slate-900 bg-slate-950/60 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-950 text-cyan-400 border border-cyan-800">
+            <i data-lucide="user-check" class="w-3.5 h-3.5"></i>
+            Profile Overview
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            About <span class="text-gradient">Ajay Bhesdadiya</span>
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+            Bridging raw numerical chaos and strategic decision making through rigorous statistical data analytics, automated reporting, and modern business intelligence.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          
+          <!-- Narrative / Background -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="glass-card p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-4">
+              <h3 class="text-xl font-bold text-white flex items-center gap-2.5">
+                <i data-lucide="compass" class="w-5 h-5 text-cyan-400"></i>
+                My Journey as a Fresher Data Analyst
+              </h3>
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                As a fresh graduate with an intense focus on <strong class="text-cyan-400">Data Analytics & Data Science</strong>, I have cultivated hands-on expertise in extracting, cleaning, transforming, and interpreting large-scale transactional datasets.
+              </p>
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                I do not just write SQL queries or build charts—I translate business questions into measurable analytical frameworks. Whether it is reducing customer churn, identifying revenue leakage, or streamlining operational pipelines, I bring a detail-oriented mindset paired with fast turnaround execution.
+              </p>
+
+              <!-- Fresher Pillars -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                  <div class="flex items-center gap-2.5 text-cyan-400 font-bold text-sm mb-1">
+                    <i data-lucide="lightbulb" class="w-4 h-4"></i>
+                    Analytical Problem Solver
+                  </div>
+                  <p class="text-xs text-slate-400">Quick to diagnose data inconsistencies, formulate hypotheses, and validate with statistical tests.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                  <div class="flex items-center gap-2.5 text-blue-400 font-bold text-sm mb-1">
+                    <i data-lucide="rocket" class="w-4 h-4"></i>
+                    Continuous Fast Learner
+                  </div>
+                  <p class="text-xs text-slate-400">Eager to adapt to enterprise tech stacks, cloud environments (AWS/Azure), and domain-specific KPIs.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                  <div class="flex items-center gap-2.5 text-emerald-400 font-bold text-sm mb-1">
+                    <i data-lucide="pie-chart" class="w-4 h-4"></i>
+                    Visual Storyteller
+                  </div>
+                  <p class="text-xs text-slate-400">Designing executive dashboards that enable non-technical business leaders to extract instant insights.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                  <div class="flex items-center gap-2.5 text-purple-400 font-bold text-sm mb-1">
+                    <i data-lucide="layers" class="w-4 h-4"></i>
+                    Clean ETL Pipelines
+                  </div>
+                  <p class="text-xs text-slate-400">Meticulous in data validation, missing value imputation, outlier detection, and schema modeling.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Education & Core Bio Details -->
+          <div class="lg:col-span-5 space-y-6">
+            
+            <!-- Quick Bio Card -->
+            <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-4">
+              <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                <div class="flex items-center gap-3.5">
+                  <div class="relative">
+                    <img 
+                      src="assets/ajay-photo.jpg" 
+                      alt="Ajay Bhesdadiya Avatar" 
+                      class="w-13 h-13 rounded-full object-cover object-[32%_15%] border-2 border-cyan-400/80 shadow-md shadow-cyan-500/30"
+                    />
+                    <span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-emerald-400 border-2 border-slate-900"></span>
+                  </div>
+                  <div>
+                    <h4 class="text-base font-bold text-white leading-tight">Ajay Bhesdadiya</h4>
+                    <p class="text-xs text-cyan-400 font-medium">Fresher Data Analyst</p>
+                  </div>
+                </div>
+                <span class="px-2.5 py-1 rounded-lg text-[10px] font-mono font-bold bg-cyan-950 text-cyan-300 border border-cyan-800">
+                  VERIFIED
+                </span>
+              </div>
+              
+              <ul class="space-y-3 text-sm">
+                <li class="flex items-center justify-between">
+                  <span class="text-slate-400">Full Name</span>
+                  <span class="font-semibold text-white">Ajay Bhesdadiya</span>
+                </li>
+                <li class="flex items-center justify-between">
+                  <span class="text-slate-400">Role</span>
+                  <span class="font-semibold text-cyan-400">Data Analyst / BI Specialist</span>
+                </li>
+                <li class="flex items-center justify-between">
+                  <span class="text-slate-400">Experience Level</span>
+                  <span class="font-semibold text-emerald-400">Fresher (Immediate Joiner)</span>
+                </li>
+                <li class="flex items-center justify-between">
+                  <span class="text-slate-400">Primary Stack</span>
+                  <span class="font-semibold text-slate-200">Power BI, SQL, Python, Excel</span>
+                </li>
+                <li class="flex items-center justify-between">
+                  <span class="text-slate-400">Location</span>
+                  <span class="font-semibold text-white">India (Open to Remote / Relocation)</span>
+                </li>
+                <li class="flex items-center justify-between">
+                  <span class="text-slate-400">Notice Period</span>
+                  <span class="font-semibold text-emerald-400">Available Immediately</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Education Card -->
+            <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-4">
+              <h4 class="text-base font-bold text-white border-b border-slate-800 pb-3 flex items-center gap-2">
+                <i data-lucide="graduation-cap" class="w-4 h-4 text-cyan-400"></i>
+                Education & Academic Background
+              </h4>
+
+              <div class="space-y-4">
+                <div class="relative pl-6 border-l-2 border-cyan-500/50 space-y-1">
+                  <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Bachelor's Degree</span>
+                  <h5 class="font-bold text-white text-sm">B.Tech / Bachelor in Computer Science & IT</h5>
+                  <p class="text-xs text-slate-400">Relevant Coursework: Database Management Systems (DBMS), Probability & Statistics, Data Structures, Business Analytics</p>
+                  <span class="inline-block text-[11px] font-mono text-slate-400 bg-slate-900 px-2 py-0.5 rounded mt-1">First Class with Distinction</span>
+                </div>
+
+                <div class="relative pl-6 border-l-2 border-slate-700 space-y-1">
+                  <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Specialized Training</span>
+                  <h5 class="font-bold text-white text-sm">Module 1: Fundamentals of IT & Data Analytics</h5>
+                  <p class="text-xs text-slate-400">Rigorous immersion in Advanced SQL, Python for Data Science, Power BI DAX modeling, and Data Warehousing fundamentals.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills & Tools for Data Analytics Section -->
+    <section id="skills" class="py-20 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-950 text-cyan-400 border border-cyan-800">
+            <i data-lucide="wrench" class="w-3.5 h-3.5"></i>
+            Technical Arsenal
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Tools & Skills for <span class="text-gradient">Data Analytics</span>
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+            A comprehensive, industry-aligned toolkit designed to manage the entire data pipeline from raw database queries to executive visual reporting.
+          </p>
+        </div>
+
+        <!-- Skills Grid: Categorized Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Tool 1: Business Intelligence & Visualization -->
+          <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-5 group hover:border-cyan-500/50">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:scale-110 transition-transform">
+              <i data-lucide="layout-dashboard" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">Business Intelligence & Viz</h3>
+              <p class="text-xs text-slate-400 mt-1">Interactive dashboards, visual analytics, and KPI tracking</p>
+            </div>
+
+            <!-- Skill Items -->
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="font-medium text-slate-200">Power BI (DAX, Power Query)</span>
+                  <span class="text-cyan-400 font-mono">92%</span>
+                </div>
+                <div class="w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-cyan-400 to-amber-400 h-1.5 rounded-full" style="width: 92%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="font-medium text-slate-200">Tableau (Storytelling & Dashboards)</span>
+                  <span class="text-cyan-400 font-mono">85%</span>
+                </div>
+                <div class="w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-1.5 rounded-full" style="width: 85%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="font-medium text-slate-200">Executive KPI Scorecards</span>
+                  <span class="text-cyan-400 font-mono">90%</span>
+                </div>
+                <div class="w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-cyan-400 to-emerald-400 h-1.5 rounded-full" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Badges -->
+            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-800">
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">Data Modeling</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">Star Schema</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">Drill-Downs</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">Calculated Columns</span>
+            </div>
+          </div>
+
+          <!-- Tool 2: Database & SQL Mastery -->
+          <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-5 group hover:border-cyan-500/50">
+            <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform">
+              <i data-lucide="database" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">SQL & Database Querying</h3>
+              <p class="text-xs text-slate-400 mt-1">Data extraction, complex joining, and aggregation</p>
+            </div>
+
+            <!-- Skill Items -->
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="font-medium text-slate-200">PostgreSQL & MySQL</span>
+                  <span class="text-cyan-400 font-mono">90%</span>
+                </div>
+                <div class="w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-1.5 rounded-full" style="width: 90%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="font-medium text-slate-200">Window Functions & Subqueries</span>
+                  <span class="text-cyan-400 font-mono">88%</span>
+                </div>
+                <div class="w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-cyan-400 to-indigo-500 h-1.5 rounded-full" style="width: 88%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="font-medium text-slate-200">CTEs, Indexes & Query Tuning</span>
+                  <span class="text-cyan-400 font-mono">82%</span>
+                </div>
+                <div class="w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-cyan-400 to-purple-500 h-1.5 rounded-full" style="width: 82%"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Badges -->
+            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-800">
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">INNER/LEFT JOIN</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">PARTITION BY</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">HAVING/GROUP BY</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">DML/DDL</span>
+            </div>
+          </div>
+
+          <!-- Tool 3: Python for Data Science -->
+          <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-5 group hover:border-cyan-500/50">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
+              <i data-lucide="binary" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">Python & Analytics Libraries</h3>
+              <p class="text-xs text-slate-400 mt-1">Data manipulation, cleaning, and exploratory data analysis</p>
+            </div>
+
+            <!-- Skill Items -->
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="font-medium text-slate-200">Pandas & NumPy</span>
+                  <span class="text-cyan-400 font-mono">90%</span>
+                </div>
+                <div class="w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-cyan-400 to-emerald-500 h-1.5 rounded-full" style="width: 90%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="font-medium text-slate-200">Matplotlib & Seaborn</span>
+                  <span class="text-cyan-400 font-mono">88%</span>
+                </div>
+                <div class="w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-cyan-400 to-teal-500 h-1.5 rounded-full" style="width: 88%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="font-medium text-slate-200">Scikit-Learn (Basic ML / Regression)</span>
+                  <span class="text-cyan-400 font-mono">75%</span>
+                </div>
+                <div class="w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-cyan-400 to-cyan-600 h-1.5 rounded-full" style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Badges -->
+            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-800">
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">Data Wrangling</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">Lambda Functions</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">Jupyter Lab</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">Correlation Heatmaps</span>
+            </div>
+          </div>
+
+          <!-- Tool 4: Advanced Spreadsheets (Excel) -->
+          <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-5 group hover:border-cyan-500/50">
+            <div class="w-12 h-12 rounded-xl bg-green-500/10 border border-green-500/30 flex items-center justify-center text-green-400 group-hover:scale-110 transition-transform">
+              <i data-lucide="file-spreadsheet" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">Advanced Excel & Sheets</h3>
+              <p class="text-xs text-slate-400 mt-1">Financial modeling, pivot tables, and statistical formulas</p>
+            </div>
+
+            <!-- Skill Items -->
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="font-medium text-slate-200">Pivot Tables & Power Pivot</span>
+                  <span class="text-cyan-400 font-mono">95%</span>
+                </div>
+                <div class="w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-cyan-400 to-green-500 h-1.5 rounded-full" style="width: 95%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="font-medium text-slate-200">XLOOKUP, INDEX/MATCH, Nested IFS</span>
+                  <span class="text-cyan-400 font-mono">92%</span>
+                </div>
+                <div class="w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-cyan-400 to-emerald-500 h-1.5 rounded-full" style="width: 92%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="font-medium text-slate-200">Conditional Formatting & Charts</span>
+                  <span class="text-cyan-400 font-mono">90%</span>
+                </div>
+                <div class="w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-cyan-400 to-lime-500 h-1.5 rounded-full" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Badges -->
+            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-800">
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">Data Validation</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">What-If Analysis</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">Slicers</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">Basic Macros</span>
+            </div>
+          </div>
+
+          <!-- Tool 5: Statistical & Core Methodologies -->
+          <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-5 group hover:border-cyan-500/50">
+            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform">
+              <i data-lucide="sigma" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">Statistics & Core EDA</h3>
+              <p class="text-xs text-slate-400 mt-1">Quantitative testing, hypothesis validation, and metrics</p>
+            </div>
+
+            <!-- Skill Items -->
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="font-medium text-slate-200">Descriptive & Inferential Stats</span>
+                  <span class="text-cyan-400 font-mono">86%</span>
+                </div>
+                <div class="w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-cyan-400 to-purple-500 h-1.5 rounded-full" style="width: 86%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="font-medium text-slate-200">A/B Testing & Hypothesis Testing</span>
+                  <span class="text-cyan-400 font-mono">80%</span>
+                </div>
+                <div class="w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-cyan-400 to-violet-500 h-1.5 rounded-full" style="width: 80%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="font-medium text-slate-200">Outlier Detection & Imputation</span>
+                  <span class="text-cyan-400 font-mono">92%</span>
+                </div>
+                <div class="w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-cyan-400 to-fuchsia-500 h-1.5 rounded-full" style="width: 92%"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Badges -->
+            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-800">
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">P-Values</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">Normal Distribution</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">IQR & Z-Score</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">Cohort Analysis</span>
+            </div>
+          </div>
+
+          <!-- Tool 6: Developer Workflow & Version Control -->
+          <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-5 group hover:border-cyan-500/50">
+            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform">
+              <i data-lucide="git-branch" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">Developer & Workflow Tools</h3>
+              <p class="text-xs text-slate-400 mt-1">Reproducibility, documentation, and cloud environments</p>
+            </div>
+
+            <!-- Skill Items -->
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="font-medium text-slate-200">Git & GitHub</span>
+                  <span class="text-cyan-400 font-mono">88%</span>
+                </div>
+                <div class="w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-cyan-400 to-sky-500 h-1.5 rounded-full" style="width: 88%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="font-medium text-slate-200">Jupyter Notebooks & VS Code</span>
+                  <span class="text-cyan-400 font-mono">95%</span>
+                </div>
+                <div class="w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-cyan-400 to-cyan-500 h-1.5 rounded-full" style="width: 95%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="font-medium text-slate-200">ETL Pipelines & CSV/JSON/API Parsing</span>
+                  <span class="text-cyan-400 font-mono">85%</span>
+                </div>
+                <div class="w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-cyan-400 to-indigo-500 h-1.5 rounded-full" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Badges -->
+            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-800">
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">Version Control</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">Markdown Docs</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">API Requests</span>
+              <span class="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">Linux / Windows CLI</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience / Practical Internships & Training Section -->
+    <section id="experience" class="py-20 border-t border-slate-900 bg-slate-950/60 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-950 text-cyan-400 border border-cyan-800">
+            <i data-lucide="briefcase" class="w-3.5 h-3.5"></i>
+            Career Milestones
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Experience & <span class="text-gradient">Practical Training</span>
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+            Real-world internship engagements, industry simulations, and capstone analytics projects solving practical business challenges.
+          </p>
+        </div>
+
+        <!-- Experience Timeline -->
+        <div class="relative border-l-2 border-slate-800 max-w-4xl mx-auto space-y-10 pl-6 sm:pl-10">
+          
+          <!-- Experience Card 1 -->
+          <div class="relative group">
+            <!-- Timeline dot -->
+            <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-slate-950 border-2 border-cyan-400 flex items-center justify-center group-hover:scale-125 transition-transform shadow-lg shadow-cyan-500/40">
+              <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+            </div>
+
+            <div class="glass-card p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-4">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-slate-800/80 pb-4">
+                <div>
+                  <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Internship Experience</span>
+                  <h3 class="text-xl font-extrabold text-white">Data Analyst Intern</h3>
+                  <div class="text-sm font-medium text-slate-300">TechSphere Analytics Solutions</div>
+                </div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg text-xs font-mono bg-slate-900 text-slate-300 border border-slate-700 w-fit">
+                  <i data-lucide="calendar" class="w-3.5 h-3.5 text-cyan-400"></i>
+                  6 Months Practical Internship
+                </div>
+              </div>
+
+              <!-- Responsibilities & Highlights -->
+              <ul class="space-y-2.5 text-sm text-slate-300">
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-cyan-400 mt-0.5 shrink-0"></i>
+                  <span>Spearheaded data ingestion and exploratory data analysis (EDA) across <strong>75,000+ transactional e-commerce records</strong> using Python (Pandas) and PostgreSQL.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-cyan-400 mt-0.5 shrink-0"></i>
+                  <span>Engineered <strong>3 automated Power BI dashboards</strong> with interactive slicers, drill-through capabilities, and DAX measures, reducing manual spreadsheet reporting by 40%.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-cyan-400 mt-0.5 shrink-0"></i>
+                  <span>Formulated SQL views and complex CTE queries to audit customer retention cohorts and identify high-value customer purchase patterns.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-cyan-400 mt-0.5 shrink-0"></i>
+                  <span>Presented findings directly to senior analysts and team leads, recommending targeted discount campaigns that increased repeated buyer conversions.</span>
+                </li>
+              </ul>
+
+              <!-- Technologies Used -->
+              <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80">
+                <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-cyan-950/70 text-cyan-300 border border-cyan-800">Power BI (DAX)</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-blue-950/70 text-blue-300 border border-blue-800">PostgreSQL</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-emerald-950/70 text-emerald-300 border border-emerald-800">Python (Pandas, Seaborn)</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-amber-950/70 text-amber-300 border border-amber-800">Advanced Excel</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Card 2 -->
+          <div class="relative group">
+            <!-- Timeline dot -->
+            <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-slate-950 border-2 border-blue-400 flex items-center justify-center group-hover:scale-125 transition-transform shadow-lg shadow-blue-500/40">
+              <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+            </div>
+
+            <div class="glass-card p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-4">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-slate-800/80 pb-4">
+                <div>
+                  <span class="text-xs font-bold text-blue-400 uppercase tracking-wider">Virtual Job Simulation</span>
+                  <h3 class="text-xl font-extrabold text-white">Data Analytics & Visualization Consultant</h3>
+                  <div class="text-sm font-medium text-slate-300">Tata & Accenture Virtual Experience Program (Forage)</div>
+                </div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg text-xs font-mono bg-slate-900 text-slate-300 border border-slate-700 w-fit">
+                  <i data-lucide="award" class="w-3.5 h-3.5 text-blue-400"></i>
+                  Certified Simulation
+                </div>
+              </div>
+
+              <!-- Responsibilities & Highlights -->
+              <ul class="space-y-2.5 text-sm text-slate-300">
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-blue-400 mt-0.5 shrink-0"></i>
+                  <span>Conducted data cleansing, merged disparate CSV data sheets, and resolved missing values on an uncleaned retail dataset of 50,000 rows.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-blue-400 mt-0.5 shrink-0"></i>
+                  <span>Constructed visual data stories in Tableau & Power BI tailored for C-suite executive briefing, answering 4 critical strategic expansion questions.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-blue-400 mt-0.5 shrink-0"></i>
+                  <span>Delivered recommendations on top 10 performing categories and underperforming geographical territories to optimize inventory holding.</span>
+                </li>
+              </ul>
+
+              <!-- Technologies Used -->
+              <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80">
+                <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300">Tableau Public</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300">Data Cleansing & Transformation</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300">Executive Presentations</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Card 3 -->
+          <div class="relative group">
+            <!-- Timeline dot -->
+            <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-slate-950 border-2 border-purple-400 flex items-center justify-center group-hover:scale-125 transition-transform shadow-lg shadow-purple-500/40">
+              <span class="w-2 h-2 rounded-full bg-purple-400"></span>
+            </div>
+
+            <div class="glass-card p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-4">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-slate-800/80 pb-4">
+                <div>
+                  <span class="text-xs font-bold text-purple-400 uppercase tracking-wider">Academic Capstone Lead</span>
+                  <h3 class="text-xl font-extrabold text-white">Lead Data Analyst - Predictive & EDA Capstone</h3>
+                  <div class="text-sm font-medium text-slate-300">University Analytics Laboratory</div>
+                </div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg text-xs font-mono bg-slate-900 text-slate-300 border border-slate-700 w-fit">
+                  <i data-lucide="check-circle" class="w-3.5 h-3.5 text-purple-400"></i>
+                  Final Semester Project
+                </div>
+              </div>
+
+              <!-- Responsibilities & Highlights -->
+              <ul class="space-y-2.5 text-sm text-slate-300">
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-purple-400 mt-0.5 shrink-0"></i>
+                  <span>Designed the full data lifecycle: API extraction, SQL relational schema creation, automated imputation, and machine learning benchmarking.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check" class="w-4 h-4 text-purple-400 mt-0.5 shrink-0"></i>
+                  <span>Authored comprehensive technical documentation, data dictionary, and reproducibility guidelines on GitHub.</span>
+                </li>
+              </ul>
+
+              <!-- Technologies Used -->
+              <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80">
+                <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300">Python</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300">MySQL</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300">Scikit-Learn</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300">Git & GitHub</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Analytics Process / Workflow Section -->
+    <section id="process" class="py-20 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-950 text-cyan-400 border border-cyan-800">
+            <i data-lucide="workflow" class="w-3.5 h-3.5"></i>
+            Methodology
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            My <span class="text-gradient">Data Analytics Lifecycle</span>
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+            How I transform raw, messy records into structured intelligence and measurable business results every time.
+          </p>
+        </div>
+
+        <!-- 5-Step Process Flow -->
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          
+          <!-- Step 1 -->
+          <div class="glass-card p-5 rounded-2xl border border-slate-800 relative space-y-3 group hover:border-cyan-500/50">
+            <div class="flex items-center justify-between">
+              <span class="text-2xl font-extrabold text-cyan-400 font-mono">01</span>
+              <div class="w-9 h-9 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
+                <i data-lucide="search" class="w-4 h-4"></i>
+              </div>
+            </div>
+            <h3 class="font-bold text-white text-base">Business Understanding & Sourcing</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Clarifying stakeholder goals, defining core KPIs, and extracting raw data from SQL databases, APIs, or spreadsheets.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="glass-card p-5 rounded-2xl border border-slate-800 relative space-y-3 group hover:border-blue-500/50">
+            <div class="flex items-center justify-between">
+              <span class="text-2xl font-extrabold text-blue-400 font-mono">02</span>
+              <div class="w-9 h-9 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center">
+                <i data-lucide="sparkles" class="w-4 h-4"></i>
+              </div>
+            </div>
+            <h3 class="font-bold text-white text-base">Data Cleaning & Wrangling</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Handling null values, duplicate entries, schema mismatches, and reshaping datasets with Pandas & Power Query.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="glass-card p-5 rounded-2xl border border-slate-800 relative space-y-3 group hover:border-purple-500/50">
+            <div class="flex items-center justify-between">
+              <span class="text-2xl font-extrabold text-purple-400 font-mono">03</span>
+              <div class="w-9 h-9 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center">
+                <i data-lucide="line-chart" class="w-4 h-4"></i>
+              </div>
+            </div>
+            <h3 class="font-bold text-white text-base">Exploratory Data Analysis (EDA)</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Uncovering distributions, correlation matrices, seasonal trends, and testing business hypotheses with statistical tests.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="glass-card p-5 rounded-2xl border border-slate-800 relative space-y-3 group hover:border-emerald-500/50">
+            <div class="flex items-center justify-between">
+              <span class="text-2xl font-extrabold text-emerald-400 font-mono">04</span>
+              <div class="w-9 h-9 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+                <i data-lucide="pie-chart" class="w-4 h-4"></i>
+              </div>
+            </div>
+            <h3 class="font-bold text-white text-base">Interactive Dashboarding</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Constructing responsive Power BI / Tableau dashboards with DAX measures, star schema models, and drill-throughs.
+            </p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="glass-card p-5 rounded-2xl border border-slate-800 relative space-y-3 group hover:border-amber-500/50">
+            <div class="flex items-center justify-between">
+              <span class="text-2xl font-extrabold text-amber-400 font-mono">05</span>
+              <div class="w-9 h-9 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center">
+                <i data-lucide="check-check" class="w-4 h-4"></i>
+              </div>
+            </div>
+            <h3 class="font-bold text-white text-base">Insight Delivery & Storytelling</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Synthesizing actionable executive summaries, explaining root causes, and empowering leadership to drive higher ROI.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Section (Interactive Filters & Modals) -->
+    <section id="projects" class="py-20 border-t border-slate-900 bg-slate-950/60 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-950 text-cyan-400 border border-cyan-800">
+            <i data-lucide="folder-kanban" class="w-3.5 h-3.5"></i>
+            Portfolio Showcase
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Featured <span class="text-gradient">Data Analytics Projects</span>
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+            Real datasets, rigorous analytics, and dynamic business intelligence dashboards built for high impact.
+          </p>
+        </div>
+
+        <!-- Filter Category Tabs -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-12">
+          <button class="project-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-cyan-500 text-slate-950 shadow-md shadow-cyan-500/20" data-filter="all">
+            All Projects (5)
+          </button>
+          <button class="project-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700" data-filter="powerbi">
+            Power BI Dashboards
+          </button>
+          <button class="project-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700" data-filter="sql-python">
+            SQL & Python EDA
+          </button>
+          <button class="project-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700" data-filter="excel">
+            Advanced Excel
+          </button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Project Card 1: Executive Sales Dashboard -->
+          <div class="project-card glass-card rounded-2xl overflow-hidden border border-slate-800 flex flex-col justify-between" data-category="powerbi">
+            <div>
+              <!-- Mock Preview Visual -->
+              <div class="h-48 bg-gradient-to-br from-slate-900 via-cyan-950/40 to-slate-900 p-5 flex flex-col justify-between border-b border-slate-800 relative overflow-hidden group">
+                <div class="flex items-center justify-between z-10">
+                  <span class="px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/40">
+                    Power BI & SQL
+                  </span>
+                  <span class="text-xs font-mono text-cyan-400 font-bold">120K+ Records</span>
+                </div>
+                <!-- Simulated Chart Graphic -->
+                <div class="flex items-end justify-around h-24 gap-2 pt-4 px-2 opacity-80 group-hover:opacity-100 transition-opacity">
+                  <div class="w-8 bg-cyan-500/40 rounded-t h-12"></div>
+                  <div class="w-8 bg-cyan-500/60 rounded-t h-18"></div>
+                  <div class="w-8 bg-cyan-500/80 rounded-t h-14"></div>
+                  <div class="w-8 bg-cyan-400 rounded-t h-22 shadow-lg shadow-cyan-500/50"></div>
+                  <div class="w-8 bg-blue-500 rounded-t h-16"></div>
+                </div>
+                <div class="text-[11px] text-slate-400 font-mono flex items-center gap-1.5 z-10">
+                  <i data-lucide="bar-chart" class="w-3.5 h-3.5 text-cyan-400"></i>
+                  DAX Measures & Star Schema
+                </div>
+              </div>
+
+              <!-- Card Content -->
+              <div class="p-6 space-y-3">
+                <h3 class="text-lg font-bold text-white hover:text-cyan-400 transition-colors">
+                  Enterprise Sales & Profit Margin Executive Dashboard
+                </h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Interactive multi-page Power BI dashboard built with star-schema data modeling, calculating dynamic YoY growth, gross margins, and regional sales performance.
+                </p>
+
+                <!-- Project Metrics Tags -->
+                <div class="grid grid-cols-2 gap-2 py-2">
+                  <div class="bg-slate-900/90 p-2 rounded-lg border border-slate-800 text-center">
+                    <span class="text-xs font-bold text-emerald-400">+18.5%</span>
+                    <p class="text-[10px] text-slate-400">Identified Margin Gain</p>
+                  </div>
+                  <div class="bg-slate-900/90 p-2 rounded-lg border border-slate-800 text-center">
+                    <span class="text-xs font-bold text-cyan-400">4 Pages</span>
+                    <p class="text-[10px] text-slate-400">Interactive Drill-down</p>
+                  </div>
+                </div>
+
+                <!-- Tools Badges -->
+                <div class="flex flex-wrap gap-1.5 pt-2">
+                  <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300">Power BI</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300">DAX</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300">SQL Server</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300">Power Query</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Actions -->
+            <div class="p-6 pt-0 border-t border-slate-800/80 mt-4 flex items-center justify-between">
+              <button class="project-modal-trigger text-xs font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1.5"
+                data-title="Enterprise Sales & Profit Margin Executive Dashboard"
+                data-tools="Power BI, DAX, PostgreSQL, Power Query, Data Modeling"
+                data-desc="Designed and deployed an end-to-end interactive Power BI dashboard for an enterprise retail dataset containing 120,000+ sales transactions across 4 years."
+                data-highlights="Formulated 25+ advanced DAX calculations (YoY Growth, Same Period Last Year, Moving Averages, Dynamic Currency Conversion)|Built star-schema data architecture connecting 5 dimension tables with fact sales|Identified bottom 15% unprofitable SKUs, recommending inventory reallocation that unlocked ~18.5% potential margin savings."
+                data-github="https://github.com">
+                <span>View Full Study</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white transition-colors" title="GitHub Repo">
+                <i data-lucide="github" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project Card 2: Customer Churn & Cohort Analysis -->
+          <div class="project-card glass-card rounded-2xl overflow-hidden border border-slate-800 flex flex-col justify-between" data-category="sql-python">
+            <div>
+              <!-- Mock Preview Visual -->
+              <div class="h-48 bg-gradient-to-br from-slate-900 via-blue-950/40 to-slate-900 p-5 flex flex-col justify-between border-b border-slate-800 relative overflow-hidden group">
+                <div class="flex items-center justify-between z-10">
+                  <span class="px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+                    Python & SQL
+                  </span>
+                  <span class="text-xs font-mono text-emerald-400 font-bold">50K+ Customers</span>
+                </div>
+                <!-- Simulated Heatmap Graphic -->
+                <div class="grid grid-cols-4 gap-1.5 p-2 bg-slate-950/60 rounded-xl border border-slate-800">
+                  <div class="h-4 bg-emerald-400/90 rounded"></div>
+                  <div class="h-4 bg-emerald-500/70 rounded"></div>
+                  <div class="h-4 bg-emerald-600/50 rounded"></div>
+                  <div class="h-4 bg-emerald-700/30 rounded"></div>
+                  <div class="h-4 bg-emerald-400/80 rounded"></div>
+                  <div class="h-4 bg-emerald-500/60 rounded"></div>
+                  <div class="h-4 bg-emerald-700/30 rounded"></div>
+                  <div class="h-4 bg-slate-800 rounded"></div>
+                </div>
+                <div class="text-[11px] text-slate-400 font-mono flex items-center gap-1.5 z-10">
+                  <i data-lucide="activity" class="w-3.5 h-3.5 text-emerald-400"></i>
+                  Cohort Retention & Churn Drivers
+                </div>
+              </div>
+
+              <!-- Card Content -->
+              <div class="p-6 space-y-3">
+                <h3 class="text-lg font-bold text-white hover:text-cyan-400 transition-colors">
+                  E-Commerce Customer Churn & Cohort Retention Analysis
+                </h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Conducted comprehensive exploratory data analysis and cohort retention matrix on 50,000+ subscriber records to discover leading churn indicators.
+                </p>
+
+                <!-- Project Metrics Tags -->
+                <div class="grid grid-cols-2 gap-2 py-2">
+                  <div class="bg-slate-900/90 p-2 rounded-lg border border-slate-800 text-center">
+                    <span class="text-xs font-bold text-rose-400">23% Churn</span>
+                    <p class="text-[10px] text-slate-400">Detected at Month 3</p>
+                  </div>
+                  <div class="bg-slate-900/90 p-2 rounded-lg border border-slate-800 text-center">
+                    <span class="text-xs font-bold text-cyan-400">8 Key Factors</span>
+                    <p class="text-[10px] text-slate-400">Correlation Isolation</p>
+                  </div>
+                </div>
+
+                <!-- Tools Badges -->
+                <div class="flex flex-wrap gap-1.5 pt-2">
+                  <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300">Python</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300">Pandas</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300">Seaborn</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300">PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Actions -->
+            <div class="p-6 pt-0 border-t border-slate-800/80 mt-4 flex items-center justify-between">
+              <button class="project-modal-trigger text-xs font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1.5"
+                data-title="E-Commerce Customer Churn & Cohort Retention Analysis"
+                data-tools="Python (Pandas, NumPy, Seaborn), SQL, Jupyter Lab"
+                data-desc="Deep dive into customer behavioral data to pinpoint at what stage users drop off and what services correlate with highest lifetime value."
+                data-highlights="Generated Monthly Cohort Retention Heatmaps identifying sharp 23% drop-off within 90 days of onboarding|Employed SQL Window Functions (LEAD/LAG, DATEDIFF) to calculate individual retention intervals|Recommended re-engagement email triggers that could prevent up to 12% customer churn."
+                data-github="https://github.com">
+                <span>View Full Study</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white transition-colors" title="GitHub Repo">
+                <i data-lucide="github" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project Card 3: Healthcare Patient Analytics -->
+          <div class="project-card glass-card rounded-2xl overflow-hidden border border-slate-800 flex flex-col justify-between" data-category="powerbi">
+            <div>
+              <!-- Mock Preview Visual -->
+              <div class="h-48 bg-gradient-to-br from-slate-900 via-purple-950/40 to-slate-900 p-5 flex flex-col justify-between border-b border-slate-800 relative overflow-hidden group">
+                <div class="flex items-center justify-between z-10">
+                  <span class="px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider bg-purple-500/20 text-purple-300 border border-purple-500/40">
+                    Tableau & SQL
+                  </span>
+                  <span class="text-xs font-mono text-purple-400 font-bold">Hospital Inflow</span>
+                </div>
+                <!-- Simulated Pulse Graphic -->
+                <div class="flex items-center justify-center h-20">
+                  <div class="w-full h-1 bg-slate-800 relative flex items-center">
+                    <div class="w-1/3 h-1 bg-purple-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-purple-400 shadow-md shadow-purple-500/80 animate-ping"></div>
+                    <div class="w-2/3 h-1 bg-slate-800"></div>
+                  </div>
+                </div>
+                <div class="text-[11px] text-slate-400 font-mono flex items-center gap-1.5 z-10">
+                  <i data-lucide="pulse" class="w-3.5 h-3.5 text-purple-400"></i>
+                  Wait Time & Resource Optimization
+                </div>
+              </div>
+
+              <!-- Card Content -->
+              <div class="p-6 space-y-3">
+                <h3 class="text-lg font-bold text-white hover:text-cyan-400 transition-colors">
+                  Healthcare Patient Flow & Bed Allocation Dashboard
+                </h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Tableau visual analytics dashboard monitoring emergency room bottlenecks, average length of stay (ALOS), and department-wise bed occupancy rates.
+                </p>
+
+                <!-- Project Metrics Tags -->
+                <div class="grid grid-cols-2 gap-2 py-2">
+                  <div class="bg-slate-900/90 p-2 rounded-lg border border-slate-800 text-center">
+                    <span class="text-xs font-bold text-purple-400">-26%</span>
+                    <p class="text-[10px] text-slate-400">ER Wait Time Bottleneck</p>
+                  </div>
+                  <div class="bg-slate-900/90 p-2 rounded-lg border border-slate-800 text-center">
+                    <span class="text-xs font-bold text-cyan-400">94% Accuracy</span>
+                    <p class="text-[10px] text-slate-400">Occupancy Forecast</p>
+                  </div>
+                </div>
+
+                <!-- Tools Badges -->
+                <div class="flex flex-wrap gap-1.5 pt-2">
+                  <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300">Tableau</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300">SQL</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300">Data Cleansing</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300">Statistical Analysis</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Actions -->
+            <div class="p-6 pt-0 border-t border-slate-800/80 mt-4 flex items-center justify-between">
+              <button class="project-modal-trigger text-xs font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1.5"
+                data-title="Healthcare Patient Flow & Bed Allocation Dashboard"
+                data-tools="Tableau Public, MySQL, Statistical EDA"
+                data-desc="Engineered an operational health informatics dashboard tracking 30,000+ patient admissions to resolve emergency room congestion."
+                data-highlights="Modeled peak intake hours revealing Sunday evening nursing shortages|Built interactive what-if parameters for bed reallocation across surgical and intensive care units|Visualized length of stay vs insurance approval delays with clear statistical confidence intervals."
+                data-github="https://github.com">
+                <span>View Full Study</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white transition-colors" title="GitHub Repo">
+                <i data-lucide="github" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project Card 4: Financial Risk & Loan Default Exploratory Analysis -->
+          <div class="project-card glass-card rounded-2xl overflow-hidden border border-slate-800 flex flex-col justify-between" data-category="sql-python">
+            <div>
+              <!-- Mock Preview Visual -->
+              <div class="h-48 bg-gradient-to-br from-slate-900 via-rose-950/30 to-slate-900 p-5 flex flex-col justify-between border-b border-slate-800 relative overflow-hidden group">
+                <div class="flex items-center justify-between z-10">
+                  <span class="px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider bg-rose-500/20 text-rose-300 border border-rose-500/40">
+                    Python & EDA
+                  </span>
+                  <span class="text-xs font-mono text-rose-400 font-bold">Credit Risk</span>
+                </div>
+                <!-- Simulated Risk Gauges -->
+                <div class="flex items-center justify-center gap-4 py-2">
+                  <div class="w-16 h-16 rounded-full border-4 border-slate-800 border-t-rose-500 flex items-center justify-center font-mono text-xs font-bold text-rose-400">
+                    Risk: Hi
+                  </div>
+                  <div class="w-16 h-16 rounded-full border-4 border-slate-800 border-t-emerald-500 flex items-center justify-center font-mono text-xs font-bold text-emerald-400">
+                    Safe: 82%
+                  </div>
+                </div>
+                <div class="text-[11px] text-slate-400 font-mono flex items-center gap-1.5 z-10">
+                  <i data-lucide="shield-alert" class="w-3.5 h-3.5 text-rose-400"></i>
+                  Default Probability & Outlier Profiling
+                </div>
+              </div>
+
+              <!-- Card Content -->
+              <div class="p-6 space-y-3">
+                <h3 class="text-lg font-bold text-white hover:text-cyan-400 transition-colors">
+                  Banking Financial Credit Risk & Default Prediction
+                </h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Analyzed borrower demographics, debt-to-income ratios (DTI), and credit utilization metrics using Python to isolate leading signals of loan defaults.
+                </p>
+
+                <!-- Project Metrics Tags -->
+                <div class="grid grid-cols-2 gap-2 py-2">
+                  <div class="bg-slate-900/90 p-2 rounded-lg border border-slate-800 text-center">
+                    <span class="text-xs font-bold text-rose-400">DTI > 38%</span>
+                    <p class="text-[10px] text-slate-400">Default Trigger Point</p>
+                  </div>
+                  <div class="bg-slate-900/90 p-2 rounded-lg border border-slate-800 text-center">
+                    <span class="text-xs font-bold text-emerald-400">84% Precision</span>
+                    <p class="text-[10px] text-slate-400">Risk Segmentation</p>
+                  </div>
+                </div>
+
+                <!-- Tools Badges -->
+                <div class="flex flex-wrap gap-1.5 pt-2">
+                  <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300">Python</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300">Pandas</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300">Matplotlib</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300">Statistics</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Actions -->
+            <div class="p-6 pt-0 border-t border-slate-800/80 mt-4 flex items-center justify-between">
+              <button class="project-modal-trigger text-xs font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1.5"
+                data-title="Banking Financial Credit Risk & Default Prediction"
+                data-tools="Python, Pandas, Matplotlib, Scikit-Learn, Statsmodels"
+                data-desc="Exploratory investigation of 45,000 retail banking credit applications to safeguard lending capital."
+                data-highlights="Identified strong collinearity between revolving credit balance and late payment delinquency|Employed IQR outlier filtering and StandardScaler transformations to normalize skewness|Delivered an executive credit scoring rulebook minimizing defaults by ~14%."
+                data-github="https://github.com">
+                <span>View Full Study</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white transition-colors" title="GitHub Repo">
+                <i data-lucide="github" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project Card 5: Advanced Excel Inventory & Supply Chain -->
+          <div class="project-card glass-card rounded-2xl overflow-hidden border border-slate-800 flex flex-col justify-between" data-category="excel">
+            <div>
+              <!-- Mock Preview Visual -->
+              <div class="h-48 bg-gradient-to-br from-slate-900 via-green-950/30 to-slate-900 p-5 flex flex-col justify-between border-b border-slate-800 relative overflow-hidden group">
+                <div class="flex items-center justify-between z-10">
+                  <span class="px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider bg-green-500/20 text-green-300 border border-green-500/40">
+                    Advanced Excel
+                  </span>
+                  <span class="text-xs font-mono text-green-400 font-bold">Supply Chain</span>
+                </div>
+                <!-- Simulated Excel Grid Graphic -->
+                <div class="bg-slate-950/80 rounded-xl p-3 border border-slate-800 font-mono text-[10px] space-y-1 text-slate-300">
+                  <div class="flex justify-between text-green-400 border-b border-slate-800 pb-1">
+                    <span>SKU_ID</span><span>REORDER_PT</span><span>TURNOVER</span>
+                  </div>
+                  <div class="flex justify-between"><span>SKU-9021</span><span>1,200</span><span class="text-emerald-400">8.4x</span></div>
+                  <div class="flex justify-between"><span>SKU-4412</span><span>450</span><span class="text-amber-400">3.1x</span></div>
+                </div>
+                <div class="text-[11px] text-slate-400 font-mono flex items-center gap-1.5 z-10">
+                  <i data-lucide="package" class="w-3.5 h-3.5 text-green-400"></i>
+                  Inventory Turnover & Dynamic Reorder Models
+                </div>
+              </div>
+
+              <!-- Card Content -->
+              <div class="p-6 space-y-3">
+                <h3 class="text-lg font-bold text-white hover:text-cyan-400 transition-colors">
+                  Supply Chain & Inventory Turnover Analytics Model
+                </h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Automated spreadsheet decision tool built using Power Pivot, XLOOKUP, dynamic slicers, and conditional logic to prevent overstocking.
+                </p>
+
+                <!-- Project Metrics Tags -->
+                <div class="grid grid-cols-2 gap-2 py-2">
+                  <div class="bg-slate-900/90 p-2 rounded-lg border border-slate-800 text-center">
+                    <span class="text-xs font-bold text-green-400">$35,000</span>
+                    <p class="text-[10px] text-slate-400">Reduced Holding Cost</p>
+                  </div>
+                  <div class="bg-slate-900/90 p-2 rounded-lg border border-slate-800 text-center">
+                    <span class="text-xs font-bold text-cyan-400">100% Automated</span>
+                    <p class="text-[10px] text-slate-400">Spreadsheet Refresh</p>
+                  </div>
+                </div>
+
+                <!-- Tools Badges -->
+                <div class="flex flex-wrap gap-1.5 pt-2">
+                  <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300">Excel Power Pivot</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300">XLOOKUP</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300">Conditional Formatting</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300">KPI Slicers</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Actions -->
+            <div class="p-6 pt-0 border-t border-slate-800/80 mt-4 flex items-center justify-between">
+              <button class="project-modal-trigger text-xs font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1.5"
+                data-title="Supply Chain & Inventory Turnover Analytics Model"
+                data-tools="Advanced Microsoft Excel, Power Pivot, Data Models, Dynamic Slicers"
+                data-desc="Built a full-featured inventory analysis dashboard in Excel managing over 15,000 inventory items across 6 distribution hubs."
+                data-highlights="Automated safety stock calculation and economic order quantity (EOQ) using advanced nested logic|Constructed interactive pivot tables allowing warehouse managers to filter by supplier lead time|Prevented stockouts by triggering dynamic color-coded alerts when safety thresholds were breached."
+                data-github="https://github.com">
+                <span>View Full Study</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white transition-colors" title="GitHub Repo">
+                <i data-lucide="github" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Certifications & Continuous Learning Section -->
+    <section id="certifications" class="py-20 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-950 text-cyan-400 border border-cyan-800">
+            <i data-lucide="award" class="w-3.5 h-3.5"></i>
+            Credentials
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Certifications & <span class="text-gradient">Recognitions</span>
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+            Verified qualifications demonstrating structured training, problem solving, and adherence to industry best practices.
+          </p>
+        </div>
+
+        <!-- Certifications Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Cert 1 -->
+          <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-4 text-center group hover:border-cyan-500/50">
+            <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mx-auto group-hover:scale-110 transition-transform">
+              <i data-lucide="award" class="w-7 h-7"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-base">Google Data Analytics</h3>
+              <p class="text-xs text-slate-400 mt-1">Coursera / Google Professional</p>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Certified across data cleaning, SQL query development, Tableau visualizations, and R programming fundamentals.
+            </p>
+            <div class="pt-2 border-t border-slate-800">
+              <span class="inline-block text-[11px] font-mono text-cyan-400 font-semibold">Verified Credential</span>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-4 text-center group hover:border-amber-500/50">
+            <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mx-auto group-hover:scale-110 transition-transform">
+              <i data-lucide="bar-chart-3" class="w-7 h-7"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-base">Microsoft Power BI Analyst</h3>
+              <p class="text-xs text-slate-400 mt-1">PL-300 Curriculum Track</p>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Comprehensive mastery in data modeling, DAX time intelligence, Power Query ETL, and report publishing.
+            </p>
+            <div class="pt-2 border-t border-slate-800">
+              <span class="inline-block text-[11px] font-mono text-amber-400 font-semibold">Specialized Track</span>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-4 text-center group hover:border-emerald-500/50">
+            <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mx-auto group-hover:scale-110 transition-transform">
+              <i data-lucide="database" class="w-7 h-7"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-base">SQL (Advanced) 5-Star</h3>
+              <p class="text-xs text-slate-400 mt-1">HackerRank Skill Assessment</p>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Validated expertise in recursive queries, window partitioning, query optimization, and complex conditional joins.
+            </p>
+            <div class="pt-2 border-t border-slate-800">
+              <span class="inline-block text-[11px] font-mono text-emerald-400 font-semibold">Gold Badge Earner</span>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-4 text-center group hover:border-blue-500/50">
+            <div class="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 mx-auto group-hover:scale-110 transition-transform">
+              <i data-lucide="code-2" class="w-7 h-7"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-base">Python for Data Science</h3>
+              <p class="text-xs text-slate-400 mt-1">DataCamp / Deep Learning Track</p>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Deep dive into Pandas, NumPy, statistical data visualization with Seaborn, and automated data wrangling scripts.
+            </p>
+            <div class="pt-2 border-t border-slate-800">
+              <span class="inline-block text-[11px] font-mono text-blue-400 font-semibold">Completed Coursework</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact & Hire Section -->
+    <section id="contact" class="py-20 border-t border-slate-900 bg-slate-950/60 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-950 text-cyan-400 border border-cyan-800">
+            <i data-lucide="send" class="w-3.5 h-3.5"></i>
+            Get In Touch
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Ready to <span class="text-gradient">Drive Data Insights?</span>
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+            I am actively interviewing for full-time Data Analyst, Junior BI Developer, and Analytics Internship roles. Let's connect!
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          
+          <!-- Contact Details Cards -->
+          <div class="lg:col-span-5 space-y-6">
+            
+            <div class="glass-card p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-6">
+              <h3 class="text-xl font-bold text-white">Contact Information</h3>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                Feel free to reach out via email, phone, or LinkedIn. I typically respond within 24 hours.
+              </p>
+
+              <div class="space-y-4">
+                <!-- Email -->
+                <a href="mailto:ajaybhesdadiya@example.com" class="flex items-center gap-4 p-3.5 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-cyan-500/50 hover:bg-slate-900 transition-colors group">
+                  <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs text-slate-400">Direct Email</div>
+                    <div class="text-sm font-semibold text-white group-hover:text-cyan-400 transition-colors">ajaybhesdadiya@example.com</div>
+                  </div>
+                </a>
+
+                <!-- Phone -->
+                <a href="tel:+919876543210" class="flex items-center gap-4 p-3.5 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-cyan-500/50 hover:bg-slate-900 transition-colors group">
+                  <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs text-slate-400">Phone / WhatsApp</div>
+                    <div class="text-sm font-semibold text-white group-hover:text-cyan-400 transition-colors">+91 98765 43210</div>
+                  </div>
+                </a>
+
+                <!-- Location -->
+                <div class="flex items-center gap-4 p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center">
+                    <i data-lucide="map-pin" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs text-slate-400">Location</div>
+                    <div class="text-sm font-semibold text-white">India (Available for Pan-India & Remote)</div>
+                  </div>
+                </div>
+
+                <!-- Availability status -->
+                <div class="flex items-center gap-4 p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center">
+                    <i data-lucide="clock" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs text-slate-400">Joining Status</div>
+                    <div class="text-sm font-semibold text-emerald-400">Immediate Joining Available</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div class="pt-4 border-t border-slate-800">
+                <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">Professional Profiles</p>
+                <div class="flex items-center gap-3">
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-cyan-400 hover:border-cyan-500/50 transition-all" title="LinkedIn Profile">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                  </a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-cyan-400 hover:border-cyan-500/50 transition-all" title="GitHub Repositories">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                  </a>
+                  <a href="https://kaggle.com" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-cyan-400 hover:border-cyan-500/50 transition-all" title="Kaggle Notebooks">
+                    <i data-lucide="code" class="w-5 h-5"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Contact Form -->
+          <div class="lg:col-span-7">
+            <div class="glass-card p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-6">
+              <div>
+                <h3 class="text-xl font-bold text-white">Send a Message</h3>
+                <p class="text-xs sm:text-sm text-slate-400 mt-1">Whether you have an opening or a project inquiry, I would love to hear from you.</p>
+              </div>
+
+              <form id="contact-form" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div class="space-y-1.5">
+                    <label for="contact-name" class="text-xs font-semibold text-slate-300">Your Full Name <span class="text-rose-400">*</span></label>
+                    <input type="text" id="contact-name" required placeholder="e.g. John Doe / Hiring Manager" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors">
+                  </div>
+                  <div class="space-y-1.5">
+                    <label for="contact-email" class="text-xs font-semibold text-slate-300">Your Email Address <span class="text-rose-400">*</span></label>
+                    <input type="email" id="contact-email" required placeholder="e.g. john@company.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors">
+                  </div>
+                </div>
+
+                <div class="space-y-1.5">
+                  <label for="contact-subject" class="text-xs font-semibold text-slate-300">Subject / Position Title</label>
+                  <input type="text" id="contact-subject" placeholder="e.g. Opportunity: Junior Data Analyst / BI Developer" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors">
+                </div>
+
+                <div class="space-y-1.5">
+                  <label for="contact-message" class="text-xs font-semibold text-slate-300">Your Message <span class="text-rose-400">*</span></label>
+                  <textarea id="contact-message" rows="4" required placeholder="Tell me about your team, project requirements, or job description..." class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold text-sm shadow-xl shadow-cyan-500/20 transition-all hover:scale-102">
+                  <i data-lucide="send" class="w-4 h-4"></i>
+                  Send Message
+                </button>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/80 bg-slate-950 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <!-- Brand & Copy -->
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-cyan-500 flex items-center justify-center text-slate-950 font-bold">
+          <i data-lucide="bar-chart-2" class="w-4 h-4"></i>
+        </div>
+        <p class="text-xs text-slate-400">
+          &copy; 2025 <strong class="text-white">Ajay Bhesdadiya</strong>. All rights reserved. Crafted for Data Analytics Excellence.
+        </p>
+      </div>
+
+      <!-- Quick Nav -->
+      <div class="flex flex-wrap items-center gap-6 text-xs text-slate-400">
+        <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+        <a href="#skills" class="hover:text-cyan-400 transition-colors">Tools</a>
+        <a href="#experience" class="hover:text-cyan-400 transition-colors">Experience</a>
+        <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+        <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+        <a href="#hero" class="hover:text-cyan-400 transition-colors flex items-center gap-1">
+          <span>Back to Top</span>
+          <i data-lucide="arrow-up" class="w-3 h-3"></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Project Details Interactive Modal -->
+  <div id="project-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
+    <div id="project-modal-card" class="bg-slate-900 border border-slate-700/80 rounded-2xl max-w-2xl w-full p-6 sm:p-8 space-y-5 shadow-2xl transform scale-95 transition-transform duration-300 max-h-[90vh] overflow-y-auto">
+      <div class="flex items-start justify-between border-b border-slate-800 pb-4">
+        <div>
+          <span id="modal-project-tools" class="text-xs font-mono font-bold text-cyan-400"></span>
+          <h3 id="modal-project-title" class="text-xl sm:text-2xl font-extrabold text-white mt-1"></h3>
+        </div>
+        <button id="modal-close-btn" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="space-y-4 text-sm text-slate-300">
+        <div>
+          <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Project Synopsis</h4>
+          <p id="modal-project-desc" class="leading-relaxed"></p>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Key Analytical Highlights</h4>
+          <ul id="modal-project-highlights" class="space-y-2 text-xs sm:text-sm"></ul>
+        </div>
+      </div>
+
+      <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+        <a id="modal-github-link" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold transition-colors">
+          <i data-lucide="github" class="w-4 h-4"></i>
+          Explore Source Code & Notebooks
+        </a>
+        <button id="modal-secondary-close" class="px-4 py-2 rounded-xl border border-slate-700 text-slate-400 hover:text-white text-xs font-semibold transition-colors">
+          Close Window
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resume Preview / Download Modal -->
+  <div id="resume-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="bg-slate-900 border border-slate-700/80 rounded-2xl max-w-lg w-full p-6 sm:p-8 space-y-6 shadow-2xl transform scale-95 transition-transform duration-300">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center font-bold">
+            <i data-lucide="file-text" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white">Ajay Bhesdadiya - Resume</h3>
+            <p class="text-xs text-cyan-400 font-medium">Data Analyst / BI Specialist (Fresher)</p>
+          </div>
+        </div>
+        <button id="resume-modal-close-btn" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="space-y-3 text-sm text-slate-300">
+        <p>
+          Download or preview Ajay Bhesdadiya's updated resume detailing technical data analytics coursework, capstones, SQL problem solving, and Power BI dashboards.
+        </p>
+        <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800 space-y-2 text-xs">
+          <div class="flex justify-between text-slate-400">
+            <span>Format:</span>
+            <span class="text-white font-mono">PDF Document (ATS Friendly)</span>
+          </div>
+          <div class="flex justify-between text-slate-400">
+            <span>Target Roles:</span>
+            <span class="text-cyan-400 font-semibold">Data Analyst, BI Analyst, SQL Developer</span>
+          </div>
+          <div class="flex justify-between text-slate-400">
+            <span>Status:</span>
+            <span class="text-emerald-400 font-semibold">Ready for Immediate Hiring</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center gap-3 pt-2">
+        <button id="download-cv-action" class="w-full sm:flex-1 inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs shadow-lg shadow-cyan-500/25 transition-all">
+          <i data-lucide="download" class="w-4 h-4"></i>
+          Download Resume (PDF)
+        </button>
+        <a href="#contact" id="resume-contact-shortcut" class="w-full sm:w-auto inline-flex items-center justify-center px-4 py-3 rounded-xl border border-slate-700 bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold transition-colors">
+          Contact Directly
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 flex items-center gap-3 px-5 py-3.5 rounded-xl bg-slate-900 border border-cyan-500/60 shadow-2xl text-white text-sm transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+    <div class="w-6 h-6 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">
+      <i data-lucide="check" class="w-4 h-4"></i>
+    </div>
+    <span id="toast-message" class="font-medium text-xs sm:text-sm">Message sent successfully!</span>
+  </div>
+
+  <!-- Custom Client Script -->
+  <script src="script.js"></script>
+</body>
+</html>

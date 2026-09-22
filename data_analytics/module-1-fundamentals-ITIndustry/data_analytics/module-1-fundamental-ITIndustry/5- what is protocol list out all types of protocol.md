@@ -12,7 +12,7 @@ A protocol works like a common language. Just as two people need to speak the sa
 * **TCP/IP** – Used as the foundation of internet communication
 * **DNS** – Used for translating domain names into IP addresses
 
----
+--- 
 
 # What Does a Protocol Define?
 

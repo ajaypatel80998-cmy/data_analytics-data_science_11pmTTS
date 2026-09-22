@@ -1,12 +1,12 @@
- # What Is Web Hosting?
+  # What Is Web Hosting?
 
- ## Definition
+ ## Definition  
 
  **Web hosting** is a service that stores a website's files on an internet-connected server and makes those files available to visitors through a domain name or IP address.
 
  A website usually contains files such as HTML, CSS, JavaScript, images, videos, and databases. When a visitor enters a website address in a browser, the browser requests these files from the hosting server. The server then sends the files back so the website can be displayed.
 
- ## How Web Hosting Works
+ ## How Web Hosting Works        
 
  1. A website owner creates website files and uploads them to a hosting server.
  2. The domain name is connected to the server using DNS settings.
@@ -73,7 +73,7 @@
  - Stronger isolation and customization
  - Suitable for high-traffic websites
 
- **Disadvantages:**
+ **Disadvantages:**     
 
  - High cost
  - Server administration and security may be the customer's responsibility

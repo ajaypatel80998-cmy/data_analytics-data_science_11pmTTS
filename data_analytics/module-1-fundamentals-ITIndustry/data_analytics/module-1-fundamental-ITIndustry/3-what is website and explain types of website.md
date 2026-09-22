@@ -56,7 +56,7 @@ Examples of databases include MySQL, PostgreSQL, MongoDB, and SQLite.
 
 # Types of Websites
 
-Websites can be classified according to their **purpose, functionality, and technology**.
+Websites can be classified according to their **purpose, functionality, and technology**. 
 
 ## 1. Static Website
 
@@ -234,6 +234,8 @@ A **government website** provides official government information and online ser
 * Checking government schemes
 * Downloading forms
 * Checking application status
+
+
 
 
 
