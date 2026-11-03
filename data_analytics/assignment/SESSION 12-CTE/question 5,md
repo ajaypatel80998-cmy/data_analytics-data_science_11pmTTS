@@ -1,0 +1,34 @@
+Given a messy SQL query that finds all users with more than 1000 followers from a 'Users' table, refactor it to use a CTE for better clarity and maintainability.
+
+``` sql
+CREATE TABLE Users (
+    id INT PRIMARY KEY,
+    username VARCHAR(100),
+    followers_count INT
+);
+```
+
+
+
+``` sql
+SELECT id, username, followers_count
+FROM Users
+WHERE followers_count > 1000
+ORDER BY followers_count DESC;
+```
+
+
+
+``` sql
+WITH PopularUsers AS (
+    SELECT id, username, followers_count
+    FROM Users
+    WHERE followers_count > 1000
+)
+SELECT
+    id,
+    username,
+    followers_count
+FROM PopularUsers
+ORDER BY followers_count DESC;
+```

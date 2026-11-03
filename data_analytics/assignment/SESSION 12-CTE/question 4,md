@@ -1,0 +1,17 @@
+Write a recursive CTE that generates a list of dates for the next 7 days starting from today, similar to how BookMyShow shows available dates for movie bookings.<br><br><em><strong>Hint:</strong> Use a base case for today and recursion to add one day at a time.</em>
+
+``` sql
+WITH RECURSIVE NextSevenDays AS (
+    -- Base case: આજની તારીખ
+    SELECT CURDATE() AS booking_date
+
+    UNION ALL
+
+    -- Recursive case: એક દિવસ ઉમેરો
+    SELECT DATE_ADD(booking_date, INTERVAL 1 DAY)
+    FROM NextSevenDays
+    WHERE booking_date < DATE_ADD(CURDATE(), INTERVAL 6 DAY)
+)
+SELECT booking_date
+FROM NextSevenDays;
+```
